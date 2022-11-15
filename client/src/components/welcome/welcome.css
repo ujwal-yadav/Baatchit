@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #222528;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.welcome img {
+  height: 15rem;
+}
+.welcome h2 {
+  font-size: 1.5rem;
+}
+.welcome span {
+  color: #ff6c6c;
+  font-weight: 600;
+}
+.welcome h4 {
+  color: #55a9fe;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 900px) {
+  .welcome img {
+    height: 15rem;
+  }
+  .welcome h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .welcome h4 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 735px) {
+  .welcome img {
+    height: 10rem;
+  }
+  .welcome h2 {
+    font-size: 1rem;
+  }
+  .welcome h4 {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .welcome {
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 435px) {
+  .welcome img {
+    height: 8rem;
+  }
+  .welcome h2 {
+    font-size: 0.8rem;
+  }
+  .welcome h4 {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 395px) {
+  .welcome img {
+    height: 6rem;
+  }
+  .welcome h2 {
+    font-size: 0.8rem;
+  }
+  .welcome h4 {
+    font-size: 0.5rem;
+  }
+}

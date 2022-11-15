@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+2:wght@600;700;800;family=Poppins:400,500,600,700&display=swap");
+.chatpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: wheat;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.1px;
+  color: #32465a;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  background: url("../../asset/mac2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#frame {
+  width: 95%;
+  min-width: 300px;
+  max-width: 1100px;
+  height: 92vh;
+  min-height: 300px;
+  max-height: 720px;
+  background: #dadbdb;
+  border-radius: 20px;
+}
+@media screen and (max-width: 450px) {
+  #frame {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100%;
+  }
+}
+#frame #sidepanel {
+  float: left;
+  min-width: 150px;
+  max-width: 250px;
+  width: 100%;
+  height: 100%;
+  background: #2c3e50;
+  color: #f5f5f5;
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel {
+    width: 58px;
+    min-width: 58px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #frame #sidepanel {
+    border-radius: 0;
+  }
+}
+#frame #sidepanel #profile {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #243140;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile {
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px 0 0 5px;
+    padding-top: 12px;
+  }
+}
+#frame #sidepanel #profile .wrap {
+  height: 60px;
+  line-height: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-transition: 0.3s height ease;
+  -o-transition: 0.3s height ease;
+  -webkit-transition: 0.3s height ease;
+  transition: 0.3s height ease;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap {
+    height: 55px;
+  }
+}
+#frame #sidepanel #profile .wrap p {
+  float: left;
+  font-size: 1.3rem;
+  margin: 0;
+  background: linear-gradient(to right, #ff759c 0%, #dcbcff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 8px;
+  font-weight: 500;
+  font-family: "Baloo 2", cursive;
+  text-transform: lowercase;
+  font-weight: bold;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap p {
+    display: none;
+  }
+}
+#frame #sidepanel #profile .wrap i {
+  margin-left: 6px;
+  font-size: 1.3rem;
+  color: #ff759c;
+  cursor: pointer;
+  -moz-transition: 0.3s border ease;
+  -o-transition: 0.3s border ease;
+  -webkit-transition: 0.3s border ease;
+  transition: 0.3s border ease;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap i {
+    margin: 0;
+    padding-right: 0.3rem;
+    padding-bottom: 0.6rem;
+  }
+}
+#frame #sidepanel #contacts {
+  height: calc(100% - 80px);
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #contacts {
+    height: calc(100% - 100px);
+    overflow-x: hidden;
+  }
+  #frame #sidepanel #contacts::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#frame #sidepanel #contacts::-webkit-scrollbar {
+  width: 8px;
+  background: #2c3e50;
+}
+
+#frame #sidepanel #contacts::-webkit-scrollbar-thumb {
+  background-color: #243140;
+}
+#frame #sidepanel #contacts .contact {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #contacts .contact {
+    padding: 8px;
+  }
+}
+#frame #sidepanel #contacts .contact:hover {
+  background: #32465a;
+}
+
+#frame #sidepanel #contacts .contact.active {
+  background: #32465a;
+  border-right: 5px solid #435f7a;
+}
+
+#frame #sidepanel #contacts .contact .wrap {
+  width: 88%;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #contacts .contact .wrap {
+    width: 100%;
+  }
+}
+
+#frame #sidepanel #contacts .contact .wrap img {
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #contacts .contact .name {
+    display: none;
+  }
+}
+
+#frame #sidepanel #contacts .contact .name {
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+#frame .content {
+  float: right;
+  min-width: calc(100% - 250px);
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 12px;
+  background-color: #d8dbe2;
+}
+@media screen and (max-width: 735px) {
+  #frame .content {
+    width: calc(100% - 58px);
+    min-width: 100px !important;
+  }
+}
+@media screen and (min-width: 900px) {
+  #frame .content {
+    width: calc(100% - 340px);
+  }
+}
+@media screen and (max-width: 450px) {
+  #frame .content {
+    border-radius: 0;
+  }
+}
+#frame .content .contact-profile {
+  width: 100%;
+  height: 60px;
+  line-height: 10px;
+  background-color: #fcfffe;
+  border-top-right-radius: 10px;
+  border-bottom: 3px solid #d7d7d7;
+}
+#frame .content .contact-profile img {
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin: 9px 12px 0 9px;
+}
+#frame .content .contact-profile p {
+  float: left;
+  padding-top: 25px;
+  font-weight: 600;
+}
+#frame .content .contact-profile i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  padding-top: 18px;
+  padding-right: 25px;
+  cursor: pointer;
+  font-size: 25px;
+}
+#frame .content .contact-profile i:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 450px) {
+  #frame .content .contact-profile {
+    border-radius: 0;
+  }
+}
+#frame .content .messages {
+  padding-top: 14px;
+  height: auto;
+  min-height: calc(100% - 110px);
+  max-height: calc(100% - 200px);
+  overflow-x: hidden;
+  font-weight: 500;
+}
+@media screen and (max-width: 735px) {
+  #frame .content .messages {
+    max-height: calc(100% - 105px);
+  }
+}
+#frame .content .messages::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(0, 0, 0, 0);
+}
+#frame .content .messages::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#frame .content .messages ul li {
+  display: inline-block;
+  clear: both;
+  float: left;
+  list-style: none;
+  margin: 5px 15px 5px -20px;
+  width: 100%;
+  font-size: 0.9em;
+}
+#frame .content .messages ul li:nth-last-child(1) {
+  margin-bottom: 20px;
+}
+#frame .content .messages ul li.sent img {
+  margin: 6px 8px 0 0;
+  float: left;
+}
+#frame .content .messages ul li.sent p {
+  float: left;
+  background-color: #ffffff;
+}
+#frame .content .messages ul li.replies img {
+  float: right;
+  margin: 6px 0 0 8px;
+}
+#frame .content .messages ul li.replies p {
+  background-color: #fcfffe;
+  background: #435f7a;
+  color: #f5f5f5;
+  float: right;
+}
+#frame .content .messages ul li img {
+  width: 22px;
+  border-radius: 50%;
+  float: left;
+}
+#frame .content .messages ul li p {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 205px;
+  line-height: 130%;
+}
+@media screen and (min-width: 735px) {
+  #frame .content .messages ul li p {
+    max-width: 300px;
+  }
+}
+#frame .content .message-input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 8px;
+  z-index: 99;
+  background-color: #fcfffe;
+  border-top: 3px solid #d8d8d8;
+}
+#frame .content .message-input .wrap {
+  position: relative;
+  margin: 0 10px;
+  margin-top: 8px;
+  display: flex;
+}
+#frame .content .message-input .wrap .attachment {
+  font-size: 28px;
+  padding-top: 7px;
+  padding-right: 8px;
+  cursor: pointer;
+}
+#frame .content .message-input .wrap input {
+  border: none;
+  width: 100%;
+  height: 45px;
+  padding: 10px 2px 10px 8px;
+  font-size: 0.8em;
+  border-radius: 20px;
+  color: #32465a;
+  background: #32465a;
+  color: white;
+}
+@media screen and (max-width: 735px) {
+  #frame .content .message-input .wrap input {
+    padding: 15px 32px 16px 8px;
+    height: 40px;
+  }
+}
+#frame .content .message-input .wrap input:focus {
+  outline: none;
+}
+#frame .content .message-input .wrap button {
+  border: none;
+  width: 52px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 50%;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+#frame .content .message-input .wrap button:hover {
+  color: #435f7a;
+}
+#frame .content .message-input .wrap button:focus {
+  outline: none;
+}
